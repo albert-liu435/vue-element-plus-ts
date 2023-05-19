@@ -8,13 +8,13 @@
     "build:dev": "vue-tsc && vite build --mode dev",
     "build:uat": "vue-tsc && vite build --mode uat",
     "build:prod": "vue-tsc && vite build --mode prod",
-
     "builds": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "element-plus": "^2.3.4",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0"
   },

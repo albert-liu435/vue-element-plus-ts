@@ -3,6 +3,10 @@ import './assets/main.css'
 // 1. 按需导入 createApp 函数
 //创建单页面程序实例
 import { createApp } from 'vue'
+
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
 //导入组件，命名为App
 // 2. 导入待渲染的 App.vue 组件
 // 2. 调用 app.component() 方法全局注册组件
@@ -17,6 +21,10 @@ const app = createApp(App)
 //确保 _use_ 路由实例使
 //整个应用支持路由。
 app.use(router)
+
+app.use(ElementPlus)
+
+
 //将App组件通过vuue渲染到id为app的标签中
 // 4. 调用 mount() 把 App 组件的模板结构，渲染到指定的 el 区域中
 app.mount('#app')
