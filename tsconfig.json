@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  //在tsconfig.json中添加"types": [ "vite/client" ]，用来提供import.meta.env 上 Vite 注入的环境变量的类型定义
+  "compilerOptions": {
+    "types": ["vite/client"]
+  }
+}
